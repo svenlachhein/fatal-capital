@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "fatal capital – Wie du an Risikokapital kommst",
   description:
     "Buch von Sven Lachhein. Vier Teile, 16 Kapitel, 12 Arbeitsblätter. Wie du an Risikokapital kommst und wann du es lieber sein lässt.",
-  metadataBase: new URL("https://no-proof-no-business.de"),
+  metadataBase: new URL("https://fatal-capital.de"),
   openGraph: {
     title: "fatal capital – Wie du an Risikokapital kommst",
     description:
       "Buch von Sven Lachhein. Vier Teile, 16 Kapitel, 12 Arbeitsblätter. Wie du an Risikokapital kommst und wann du es lieber sein lässt.",
-    url: "https://no-proof-no-business.de",
+    url: "https://fatal-capital.de",
     siteName: "fatal capital",
     images: [
       {
