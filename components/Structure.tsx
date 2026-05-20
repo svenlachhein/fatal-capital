@@ -34,3 +34,22 @@ export default function Structure() {
     <section id="aufbau" className="section">
       <div className="section-inner">
         <p className="section-label">Aufbau</p>
+        <h2>Vier Teile. In dieser Reihenfolge.</h2>
+        <ul className="num-list">
+          {teile.map((s) => (
+            <li key={s.num} className="num-item">
+              <div className="num-item-num">{s.num}</div>
+              <div className="num-item-body">
+                <h3>{s.name}</h3>
+                <p>{s.frage}</p>
+                <p><strong>Werkzeuge.</strong> {s.werkzeuge}</p>
+                <p><strong>Entscheidung.</strong> {s.entscheidung}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <p className="structure-meta">4 Teile · 16 Kapitel · 12 Arbeitsblätter</p>
+      </div>
+    </section>
+  );
+}
