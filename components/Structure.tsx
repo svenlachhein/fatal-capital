@@ -11,20 +11,20 @@ const teile = [
     name: "Substanz",
     frage: "Hält dein Geschäft der Prüfung stand? Markt, Wedge, Traktion, Unit Economics, Moat, Team.",
     werkzeuge: "Markt- und Wedge-Blatt, Traktions-Dashboard, Unit-Economics-Check, VC-Readiness Scorecard.",
-    entscheidung: "Schärfen, ausbauen oder Pfad wechseln.",
+    entscheidung: "Schärfen, weitergehen oder neu bewerten.",
   },
   {
     num: "03",
     name: "Prozess",
     frage: "Kannst du die Runde tatsächlich führen? Narrativ, Pipeline, Timing, Data Room, Due Diligence.",
     werkzeuge: "Deck in zwölf Sätzen, Pipeline-Plan, Sequencing, Data-Room-Liste.",
-    entscheidung: "Jetzt starten, später starten oder verschieben.",
+    entscheidung: "Runde starten oder erst die offenen Lücken schließen.",
   },
   {
     num: "04",
     name: "Steuerung",
     frage: "Verstehst du, was du unterschreibst und was nach dem Closing passiert? Term Sheet, Burn, Investor Relations.",
-    werkzeuge: "Term-Sheet-Lupe, Kapitalsteuerungsplan, Investitionsprofil.",
+    werkzeuge: "Kapitalsteuerungsplan, Investitionsprofil.",
     entscheidung: "Unterschreiben, nachverhandeln oder abbrechen.",
   },
 ];
@@ -34,22 +34,3 @@ export default function Structure() {
     <section id="aufbau" className="section">
       <div className="section-inner">
         <p className="section-label">Aufbau</p>
-        <h2>Vier Teile. In dieser Reihenfolge.</h2>
-        <ul className="num-list">
-          {teile.map((s) => (
-            <li key={s.num} className="num-item">
-              <div className="num-item-num">{s.num}</div>
-              <div className="num-item-body">
-                <h3>{s.name}</h3>
-                <p>{s.frage}</p>
-                <p><strong>Werkzeuge.</strong> {s.werkzeuge}</p>
-                <p><strong>Entscheidung.</strong> {s.entscheidung}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
-        <p className="structure-meta">4 Teile · 16 Kapitel · 12 Arbeitsblätter</p>
-      </div>
-    </section>
-  );
-}
